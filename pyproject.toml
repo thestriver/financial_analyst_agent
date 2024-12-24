@@ -1,14 +1,18 @@
 [tool.poetry]
-name = "module-template"
+name = "financial-analyst-agent"
 version = "0.1.0"
-description = ""
-authors = ["Richard Blythman <richardblythman@gmail.com>"]
+description = "Financial Analyst Agent for analyzing stocks using yfinance and market research"
+authors = ["Dean <dean@aidevmode.com>"]
 readme = "README.md"
 
 [tool.poetry.dependencies]
 python = ">=3.10,<=3.13"
 naptha-sdk = {git = "https://github.com/NapthaAI/naptha-sdk.git"}
 python-dotenv = "^1.0.1"
+yfinance = "^0.2.51"
+crewai = "^0.86.0"
+crewai-tools = "^0.17.0"
+langchain-openai = "^0.2.14"
 
 [build-system]
 requires = ["poetry-core"]
